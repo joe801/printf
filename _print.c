@@ -13,7 +13,7 @@
 int _printf(const char *format, ...)
 {
 	int i = 0;
-	char* s;
+	char *s;
 	char c;
 	va_list args;
 
@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 					_putchar(c);
 					break;
 				case 's':
-					s = va_arg(args, char*);
+					s = va_arg(args, char *);
 					while (*s != '\0')
 						_putchar(*s++);
 					break;
